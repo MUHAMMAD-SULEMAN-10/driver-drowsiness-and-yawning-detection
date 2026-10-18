@@ -1,69 +1,40 @@
 # Driver Drowsiness and Yawning Detection System
 
-A real-time computer vision application that monitors driver alertness using a webcam, MediaPipe Face Mesh, and OpenCV.
+A real-time computer vision project that detects driver drowsiness and yawning using Python, OpenCV, and MediaPipe.
 
 ## Features
-
-- Real-time face landmark detection
-- Eye Aspect Ratio (EAR) for detecting closed eyes
-- Mouth Aspect Ratio (MAR) for detecting yawning
-- Live drowsiness status and detection counters
-- Tkinter graphical user interface
-- Start and stop live detection controls
+- Real-time webcam monitoring
+- Face landmark detection
+- Eye Aspect Ratio (EAR) for drowsiness detection
+- Mouth Aspect Ratio (MAR) for yawning detection
+- Tkinter-based graphical user interface
 
 ## Technologies
-
 - Python
 - OpenCV
-- MediaPipe Face Mesh
+- MediaPipe
 - NumPy
 - Tkinter
-- Pillow
 
 ## Installation
 
-1. Install Python 3.11.
-2. Clone this repository:
+Clone the repository and navigate to the project folder:
 
-   ```bash
-   git clone https://github.com/YOUR-USERNAME/driver-drowsiness-detection.git
-   cd driver-drowsiness-detection
-   ```
+```bash
+git clone https://github.com/MUHAMMAD-SULEMAN-10/driver-drowsiness-and-yawning-detection.git
+cd driver-drowsiness-and-yawning-detection
+```
 
-3. Create and activate a virtual environment:
+Install the dependencies:
 
-   **Windows PowerShell**
+```bash
+pip install -r requirements.txt
+```
 
-   ```powershell
-   py -3.11 -m venv venv
-   .\venv\Scripts\Activate.ps1
-   ```
-
-4. Install dependencies:
-
-   ```bash
-   python -m pip install -r requirements.txt
-   ```
-
-## Run the Application
+## Run the Project
 
 ```bash
 python driver_drowsiness_detection.py
 ```
 
-Allow camera access if Windows requests permission.
-
-## Requirements
-
-- Windows or another compatible desktop operating system
-- A working webcam
-- Python 3.11
-- Internet access for initial dependency installation
-
-## Disclaimer
-
-This project is intended for educational and demonstration purposes. It is not a certified driver-safety system and should not be relied upon as the sole means of preventing accidents.
-
-## License
-
-Choose an appropriate open-source license before distributing this project.
+**Note:** A working webcam is required for live detection.
